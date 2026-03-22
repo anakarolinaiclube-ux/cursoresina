@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Curso Resina Epóxi — R$ 19,90</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --cream:      #F7F3EE;
@@ -17,6 +17,7 @@
     --rose:       #C0614A;
     --rose-light: #E8A090;
     --rose-pale:  #F5DDD8;
+    --urgency:    #B33A20;
     --green:      #18B94A;
     --green-dark: #0F8A34;
     --white:      #FFFFFF;
@@ -32,7 +33,7 @@
 
   /* ── URGENCY BAR ── */
   .urgency-bar {
-    background: var(--brown);
+    background: var(--urgency);
     padding: 11px 20px;
     text-align: center;
     font-size: 13px;
@@ -82,14 +83,14 @@
     background: var(--rose);
   }
   .hero h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(42px, 7vw, 64px);
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(36px, 7vw, 56px);
+    font-weight: 700;
     line-height: 1.05;
     color: var(--brown);
     margin-bottom: 20px;
   }
-  .hero h1 em { font-style: italic; color: var(--rose); }
+  .hero h1 em { font-style: normal; color: var(--rose); }
   .hero-desc {
     font-size: 15px;
     color: var(--brown-mid);
@@ -110,9 +111,9 @@
     font-weight: 300;
   }
   .hero-price {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 56px;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
     color: var(--rose);
     line-height: 1;
   }
@@ -165,9 +166,9 @@
   }
   .hero-stat:last-child { border-bottom: none; padding-bottom: 0; }
   .hero-stat-num {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--brown);
     line-height: 1;
   }
@@ -228,14 +229,14 @@
   }
   .sec-eyebrow::before { content: ''; width: 20px; height: 1px; background: var(--rose); }
   .sec-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(32px, 5vw, 48px);
-    font-weight: 600;
-    line-height: 1.1;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(26px, 5vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
     color: var(--brown);
     margin-bottom: 40px;
   }
-  .sec-title em { font-style: italic; color: var(--rose); }
+  .sec-title em { font-style: normal; color: var(--rose); }
 
   /* ── FOR WHOM ── */
   .for-whom { background: var(--white); }
@@ -344,9 +345,10 @@
   }
   .testi-stars { color: #C0814A; font-size: 13px; letter-spacing: 2px; margin-bottom: 12px; }
   .testi-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    font-style: italic;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
     color: var(--brown);
     line-height: 1.6;
     margin-bottom: 16px;
@@ -396,9 +398,9 @@
   }
   .price-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rose); font-weight: 500; margin-bottom: 6px; }
   .price-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 26px;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
     color: var(--brown);
   }
   .price-mid {
@@ -410,9 +412,9 @@
   }
   .price-from { font-size: 14px; color: var(--brown-soft); text-decoration: line-through; font-weight: 300; }
   .price-now {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 64px;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
     color: var(--rose);
     line-height: 1;
   }
@@ -491,14 +493,14 @@
     text-align: center;
   }
   .final h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(34px, 5vw, 52px);
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 700;
     color: var(--brown);
     margin-bottom: 12px;
-    line-height: 1.1;
+    line-height: 1.15;
   }
-  .final h2 em { font-style: italic; color: var(--rose); }
+  .final h2 em { font-style: normal; color: var(--rose); }
   .final p { font-size: 15px; color: var(--brown-mid); font-weight: 300; margin-bottom: 32px; }
 
   /* ── FOOTER ── */
@@ -853,7 +855,7 @@
 
 <footer>
   © 2025 Curso Resina Epóxi · Todos os direitos reservados<br>
-  Dúvidas? suporte@seudominio.com.br · Pagamento 100% seguro
+  Dúvidas? <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a1d2d4d1ced3d5c4e1d2c4d4c5ceccc8cfc8ce8fc2cecc8fc3d3">[email&#160;protected]</a> · Pagamento 100% seguro
 </footer>
 
 <!-- STICKY MOBILE -->
@@ -865,13 +867,6 @@
   <a href="#checkout" class="sticky-btn">Garantir agora →</a>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleFaq(btn) {
-  const item = btn.parentElement;
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
-</body>
-</html>
+  const
