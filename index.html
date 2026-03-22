@@ -42,21 +42,20 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(180deg, var(--sky-light) 0%, var(--sand) 100%);
+  background: linear-gradient(170deg, var(--ocean-deep) 0%, var(--ocean) 60%, #5B9FD4 100%);
   padding: 80px 28px 0;
   position: relative;
   overflow: hidden;
   text-align: center;
 }
-/* Sun glow */
 .hero::before {
   content: '';
   position: absolute;
-  top: -120px; left: 50%;
+  top: -80px; left: 50%;
   transform: translateX(-50%);
-  width: 500px; height: 500px;
+  width: 600px; height: 400px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(200,223,245,0.7) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 .hero-eyebrow {
@@ -67,7 +66,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ocean);
+  color: var(--sky);
   margin-bottom: 24px;
 }
 .hero-eyebrow::before, .hero-eyebrow::after { content: '·'; opacity: 0.5; }
@@ -76,19 +75,19 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   font-size: clamp(44px, 8vw, 80px);
   font-weight: 700;
   line-height: 1.05;
-  color: var(--ink);
+  color: var(--white);
   margin-bottom: 10px;
 }
 .hero h1 em {
   font-style: italic;
-  color: var(--ocean);
+  color: var(--sky);
   display: block;
 }
 .hero-sub {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: clamp(18px, 3vw, 26px);
-  color: var(--ink-soft);
+  color: rgba(255,255,255,0.75);
   font-weight: 400;
   margin-bottom: 36px;
   line-height: 1.5;
@@ -97,23 +96,23 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   display: inline-flex;
   align-items: center;
   gap: 20px;
-  background: var(--white);
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 120px;
   padding: 16px 36px;
-  box-shadow: 0 4px 32px rgba(58,127,191,0.12);
   margin-bottom: 32px;
 }
-.hero-from { font-size: 14px; color: var(--ink-muted); text-decoration: line-through; font-weight: 400; }
+.hero-from { font-size: 14px; color: rgba(255,255,255,0.5); text-decoration: line-through; font-weight: 400; }
 .hero-price {
   font-family: 'Playfair Display', serif;
   font-size: 52px;
   font-weight: 700;
-  color: var(--ocean);
+  color: var(--white);
   line-height: 1;
 }
 .hero-price sup { font-size: 22px; vertical-align: super; }
-.hero-divider { width: 1px; height: 48px; background: var(--sky); }
-.hero-price-note { font-size: 13px; color: var(--ink-soft); font-weight: 400; line-height: 1.5; text-align: left; }
+.hero-divider { width: 1px; height: 48px; background: rgba(255,255,255,0.2); }
+.hero-price-note { font-size: 13px; color: rgba(255,255,255,0.65); font-weight: 400; line-height: 1.5; text-align: left; }
 .btn-hero {
   display: inline-flex;
   align-items: center;
@@ -133,7 +132,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   margin-bottom: 16px;
 }
 .btn-hero:hover { background: var(--green-dark); transform: translateY(-3px); box-shadow: 0 10px 32px rgba(31,168,74,0.35); }
-.hero-note { font-size: 12px; color: var(--ink-muted); font-weight: 400; margin-bottom: 56px; }
+.hero-note { font-size: 12px; color: rgba(255,255,255,0.5); font-weight: 400; margin-bottom: 56px; }
 
 /* Wave divider */
 .wave-wrap { line-height: 0; position: relative; margin-top: -2px; }
@@ -515,17 +514,25 @@ body { padding-bottom: 72px; }
   <div class="hero-note">🔒 Garantia de 7 dias</div>
 </section>
 
-<!-- WAVE 1 -->
-<div class="wave-wrap">
-  <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#F2EBE0"/>
-        <stop offset="100%" stop-color="#F2EBE0"/>
-      </linearGradient>
-    </defs>
-    <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#F0F7FF"/>
-    <path d="M0,55 C300,10 600,70 900,30 C1100,5 1300,55 1440,40 L1440,80 L0,80 Z" fill="#EBF3FA" opacity="0.6"/>
+<!-- WAVE 1 — animated, ocean to cream -->
+<div class="wave-wrap" style="background: linear-gradient(170deg, var(--ocean-deep) 0%, var(--ocean) 60%, #5B9FD4 100%);">
+  <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;">
+    <path d="M0,50 C200,95 400,5 600,50 C800,95 1000,5 1200,50 C1300,72 1380,30 1440,50 L1440,100 L0,100 Z" fill="#F0F7FF">
+      <animate attributeName="d"
+        values="
+          M0,50 C200,95 400,5 600,50 C800,95 1000,5 1200,50 C1300,72 1380,30 1440,50 L1440,100 L0,100 Z;
+          M0,35 C180,5 420,85 660,40 C860,5 1060,80 1260,35 C1350,15 1410,60 1440,45 L1440,100 L0,100 Z;
+          M0,50 C200,95 400,5 600,50 C800,95 1000,5 1200,50 C1300,72 1380,30 1440,50 L1440,100 L0,100 Z"
+        dur="6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0,65 C240,20 480,90 720,55 C960,20 1200,75 1440,55 L1440,100 L0,100 Z" fill="#EBF3FA" opacity="0.7">
+      <animate attributeName="d"
+        values="
+          M0,65 C240,20 480,90 720,55 C960,20 1200,75 1440,55 L1440,100 L0,100 Z;
+          M0,55 C300,85 540,20 780,65 C1020,95 1220,30 1440,60 L1440,100 L0,100 Z;
+          M0,65 C240,20 480,90 720,55 C960,20 1200,75 1440,55 L1440,100 L0,100 Z"
+        dur="8s" repeatCount="indefinite"/>
+    </path>
   </svg>
 </div>
 
@@ -766,7 +773,7 @@ body { padding-bottom: 72px; }
 
 <footer>
   © 2025 Curso Resina Epóxi · Todos os direitos reservados<br>
-  Dúvidas? suporte@seudominio.com.br · Pagamento 100% seguro
+  Dúvidas? <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5b6b0b5aab7b1a085b6a0b0a1aaa8acabacaaeba6aaa8eba7b7">[email&#160;protected]</a> · Pagamento 100% seguro
 </footer>
 
 <div class="sticky">
@@ -774,13 +781,6 @@ body { padding-bottom: 72px; }
   <a href="#checkout" class="sticky-btn">Garantir agora →</a>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function toggleFaq(btn) {
-  const item = btn.parentElement;
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
-</script>
-</body>
-</html>
+  const
