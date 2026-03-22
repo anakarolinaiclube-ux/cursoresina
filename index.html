@@ -20,6 +20,8 @@
   --ink:        #1A2E3D;
   --ink-soft:   #4A6578;
   --ink-muted:  #8AAABB;
+  --red:        #C0392B;
+  --red-light:  #E8A099;
   --green:      #1FA84A;
   --green-dark: #157A35;
 }
@@ -29,15 +31,15 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
 
 /* ── URGENCY BAR ── */
 .bar {
-  background: var(--ocean-deep);
+  background: var(--red);
   padding: 10px 24px;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.9);
   display: flex; align-items: center; justify-content: center; gap: 10px;
 }
-.bar-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--sky); animation: pulse 1.6s ease-in-out infinite; flex-shrink: 0; }
+.bar-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red-light); animation: pulse 1.6s ease-in-out infinite; flex-shrink: 0; }
 @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.8)} }
 
 /* ── HERO ── */
@@ -80,7 +82,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
 }
 .hero h1 em {
   font-style: italic;
-  color: var(--sky);
+  color: var(--red-light);
   display: block;
 }
 .hero-sub {
@@ -181,13 +183,13 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ocean);
+  color: var(--red);
   margin-bottom: 12px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.eyebrow::before { content: ''; width: 20px; height: 1.5px; background: var(--ocean); flex-shrink: 0; }
+.eyebrow::before { content: ''; width: 20px; height: 1.5px; background: var(--red); flex-shrink: 0; }
 .sec-title {
   font-family: 'Playfair Display', serif;
   font-size: clamp(32px, 5vw, 52px);
@@ -196,7 +198,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   color: var(--ink);
   margin-bottom: 48px;
 }
-.sec-title em { font-style: italic; color: var(--ocean); }
+.sec-title em { font-style: italic; color: var(--red); }
 
 /* ── FOR WHOM ── */
 .for-whom { background: var(--white); }
@@ -231,7 +233,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   font-family: 'Playfair Display', serif;
   font-size: 12px;
   font-weight: 700;
-  color: var(--ocean);
+  color: var(--red);
   letter-spacing: 0.1em;
   flex-shrink: 0;
   width: 24px;
@@ -291,8 +293,8 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   border: 1px solid rgba(255,255,255,0.06);
 }
 .gift-inner { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
-.gift .eyebrow { color: var(--sky); justify-content: center; }
-.gift .eyebrow::before { background: var(--sky); }
+.gift .eyebrow { color: var(--red-light); justify-content: center; }
+.gift .eyebrow::before { background: var(--red-light); }
 .gift h2 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(32px, 5vw, 52px);
@@ -323,7 +325,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   padding: 28px;
   border: 1.5px solid var(--sand-dark);
 }
-.testi-stars { color: var(--ocean); font-size: 14px; letter-spacing: 2px; margin-bottom: 14px; }
+.testi-stars { color: var(--red); font-size: 14px; letter-spacing: 2px; margin-bottom: 14px; }
 .testi-text {
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -367,7 +369,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
   background: linear-gradient(135deg, var(--ocean-deep), var(--ocean));
   padding: 32px 36px;
 }
-.price-card-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.6); font-weight: 600; margin-bottom: 6px; }
+.price-card-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red-light); font-weight: 600; margin-bottom: 6px; }
 .price-card-name {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
@@ -388,7 +390,7 @@ body { font-family: 'Nunito', sans-serif; background: var(--white); color: var(-
 .price-note-tag { font-size: 12px; color: var(--ink-muted); margin-bottom: 28px; font-weight: 400; }
 .pf-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
 .pf { display: flex; gap: 10px; font-size: 14px; color: var(--ink-soft); font-weight: 400; align-items: flex-start; line-height: 1.45; }
-.pf::before { content: '✦'; color: var(--ocean); font-size: 9px; flex-shrink: 0; margin-top: 4px; }
+.pf::before { content: '✦'; color: var(--red); font-size: 9px; flex-shrink: 0; margin-top: 4px; }
 .btn-buy {
   display: block;
   background: var(--green);
